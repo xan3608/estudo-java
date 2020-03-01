@@ -1,0 +1,15 @@
+
+public class Fatorial {
+
+	public static void main(String[] args) {
+		int aux = 0;
+		for (int i = 1; i <= 10; i++) {
+			System.out.println("Fatorial de " + i);
+			for (int j = i; j > 0; j--) {
+				aux += j * (j - 1);
+			}
+			System.out.println(aux);
+			aux = 0;
+		}
+	}
+}

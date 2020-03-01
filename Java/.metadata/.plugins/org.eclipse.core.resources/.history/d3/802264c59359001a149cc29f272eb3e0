@@ -1,0 +1,9 @@
+
+public class CriaConta {
+
+	public static void main(String[] args) {
+		Conta alexandre = new Conta();
+		alexandre.saldo = 200.00;
+		System.out.println(alexandre.saldo);
+	}
+}

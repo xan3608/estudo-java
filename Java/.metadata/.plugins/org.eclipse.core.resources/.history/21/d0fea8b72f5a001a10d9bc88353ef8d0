@@ -1,0 +1,24 @@
+public class Conta{
+	
+	int agencia, numero;
+	double saldo;
+	Cliente titular;
+	
+	void deposita(double valor) {
+		this.saldo += valor;
+	}
+	boolean saca(double valor) {
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			return true;
+		}
+		return false;			
+	}
+	boolean transfere(double valor, Conta destino) {
+		if (saca(valor)) {
+			destino.deposita(valor);
+			return true;
+		}
+		return false;
+	}
+}
